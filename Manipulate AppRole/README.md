@@ -4,20 +4,15 @@ Maintain Application Role through Oracle BPM 12c (12.1.3) APIs.
 
 ## Required jar files ##
 Following jar files are required when running this sample application.
-+   `<Oracle_Home>/oracle_common/modules/oracle.jrf_12.1.3`  
-    jrf.jar  
-+   `<Oracle_Home>/soa/soa/modules/oracle.bpm.client_11.1.1`  
-    oracle.bpm.client.jar  
-    oracle.bpm.bpm-services.client.jar  
-    oracle.bpm.bpm-services.interface.jar  
-+   `<Oracle_Home>/soa/soa/modules/oracle.bpm.runtime_11.1.1`  
-    oracle.bpm.core.jar  
-+   `<Oracle_Home>/soa/soa/modules/oracle.bpm.workspace_11.1.1`  
-    oracle.bpm.ui.jar  
-+   `<Oracle_Home>/soa/soa/modules/oracle.soa.workflow_11.1.1`  
-    bpm-services.jar  
-+   `<Oracle_Home>/wlserver/server/lib`  
-    wlthint3client.jar  
++ `<ORACLE_HOME>/wlserver/server/lib/wlthint3client.jar`
++ `<ORACLE_HOME>/soa/soa/modules/oracle.soa.fabric_11.1.1/bpm-infra.jar`
++ `<ORACLE_HOME>/soa/soa/modules/oracle.soa.workflow_11.1.1/bpm-services.jar`
++ `<ORACLE_HOME>/soa/soa/modules/oracle.bpm.client_11.1.1/oracle.bpm.bpm-services.client.jar`
++ `<ORACLE_HOME>/soa/soa/modules/oracle.bpm.client_11.1.1/oracle.bpm.bpm-services.interface.jar`
++ `<ORACLE_HOME>/soa/soa/modules/oracle.bpm.runtime_11.1.1/oracle.bpm.casemgmt.interface.jar`
++ `<ORACLE_HOME>/oracle_common/modules/com.oracle.webservices.fmw.jrf-ws-api_12.1.3.jar`
++ `<ORACLE_HOME>/oracle_common/modules/com.oracle.webservices.fmw.wsclient-impl_12.1.3.jar`
++ `<ORACLE_HOME>/oracle_common/modules/clients/com.oracle.webservices.fmw.client_12.1.3.jar`
 
 ## How to run sample application ##
 ### Edit connection.properties ###
