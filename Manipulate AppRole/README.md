@@ -16,11 +16,10 @@ Following jar files are required when running this sample application.
 
 ## How to run sample application ##
 ### Edit connection.properties ###
-+   `hostname`, `port`  
-    Host name and port number for connecting BPM server.
-
 +   `username`, `password`
     User credentials for connecting BPM server.
++   `t3URL`  
+    Host name and port number for connecting BPM server.
 
 ### Run! ###
 java -cp $CLASSPATH maintenance.sample.AppRoleUtil `operation for application role` `Application Role Name` `operation for member` `Member Name`
