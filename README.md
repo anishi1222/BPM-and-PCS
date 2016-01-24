@@ -1,4 +1,4 @@
-# BPM Sample
+# BPM and PCS Sample
 Samples for Oracle BPM 12c (12.1.3) or later
 
 * Audit Instance Image
