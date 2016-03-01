@@ -1,0 +1,12 @@
+{
+    "ThreadCnt": 10,
+    "DequeCnt": 100,
+    "DoCSTargetUrl": "https://{DoCS host}:{DoCS port}/documents",
+    "PCSTargetUrl": "https://{PCS host}:{PCS port}/bpm",
+    "ProcessDefinitionId": {},
+    "TriggerFolderId": "Item ID of folder to be monitored",
+    "parentFolderId": "Id of PCS Application Folder",
+    "UserName": "Credential for DoCS and PCS",
+    "TargetFolderPrefix": "Prefix for PCS instance folder",
+    "Passwd": "Password for Credential entered above}"
+}
