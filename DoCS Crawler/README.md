@@ -1,6 +1,7 @@
 # DoCS Folder Crawler
 
-Crawl DoCS Folder for moving items to PCS instance specific folder.
+Crawl folder of Oracle Documents Cloud Service for moving items to process instance specific folder.  
+In this sample, Oracle Process Cloud Service and Documents Cloud Service are required and both services have to belong to the same identity domain.
 
 <!--## How To ##-->
 
