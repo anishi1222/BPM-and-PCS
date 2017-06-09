@@ -87,8 +87,8 @@ public class OAuth2Client {
         try (JsonReader reader = Json.createReader(new StringReader(response.readEntity(String.class)))) {
             response.close();
             JsonObject jsonObj = reader.readObject();
-            assertionMap.put("assertion_token", jsonObj.get("access_token").toString());
-            assertionMap.put("assertion_type", jsonObj.get("oracle_client_assertion_type").toString());
+            assertionMap.put("assertion_token", jsonObj.getString("access_token"));
+            assertionMap.put("assertion_type", jsonObj.getString("oracle_client_assertion_type"));
         }
         return assertionMap;
     }
