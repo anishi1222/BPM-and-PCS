@@ -54,7 +54,7 @@ public class OAuth2Client {
         map.put("TOKEN_URL", "https://<IdentityDomain>.identity.<DataCenter>.oraclecloud.com/oam/oauth2/tokens");
         map.put("CLIENT_ID", "CLIENT_ID");
         map.put("SECRET", "SECRET");
-        map.put("DOMAIN_NAME", "DOMAIN_NAME");
+        map.put("DOMAIN_NAME", "IdentityDomain");
         map.put("USER_NAME", "USER_NAME");
         map.put("PASSWORD", "PASSWORD");
         return map;
