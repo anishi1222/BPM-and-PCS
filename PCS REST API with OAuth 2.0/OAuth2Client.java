@@ -46,17 +46,17 @@ public class OAuth2Client {
         HashMap<String, String> map = new HashMap();
 
         // PCS
-        map.put("PCS_URL", "https://process-gse00010294.process.us2.oraclecloud.com:443/bpm/api/4.0/processes");
-        map.put("PCS_PROCESS_DEF_ID", "default~MyApplication!1.0~FundsTransferProcess");
+        map.put("PCS_URL", "https://<PCS Host>:443/bpm/api/4.0/processes");
+        map.put("PCS_PROCESS_DEF_ID", "Process Definition ID");
         map.put("PCS_FTS_SVC_NAME", "FundsTransferProcess.service");
 
         // OAuth
-        map.put("TOKEN_URL", "https://gse00010294.identity.us.oraclecloud.com/oam/oauth2/tokens");
-        map.put("CLIENT_ID", "b692dd8a-dba5-47c1-adab-ec8a912d61f3");
-        map.put("SECRET", "iWKrvGAJYqjCyaPkqjS5");
-        map.put("DOMAIN_NAME", "gse00010294");
-        map.put("USER_NAME", "akihiro.nishikawa@oracle.com");
-        map.put("PASSWORD", "Regh7b3A02byt%z");
+        map.put("TOKEN_URL", "https://<IdentityDomain>.identity.<DataCenter>.oraclecloud.com/oam/oauth2/tokens");
+        map.put("CLIENT_ID", "CLIENT_ID");
+        map.put("SECRET", "SECRET");
+        map.put("DOMAIN_NAME", "DOMAIN_NAME");
+        map.put("USER_NAME", "USER_NAME");
+        map.put("PASSWORD", "PASSWORD");
         return map;
     }
 
