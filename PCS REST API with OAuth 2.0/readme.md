@@ -1,4 +1,4 @@
-# Invoke PCS Process Instance through PCS REST API
+# Create PCS Process Instance through PCS REST API
 
 * We can use PCS API to do several operations with basic authentication as well as OAuth 2.0.
 * This sample shows ...
