@@ -19,7 +19,7 @@ public class OAuth2Authenticator implements ClientRequestFilter {
 
     public void filter(ClientRequestContext requestContext) throws IOException {
         MultivaluedMap<String, Object> headers = requestContext.getHeaders();
-        final String basicAuthentication = "Bearer " + this.accessToken;
-        headers.add("Authorization", basicAuthentication);
+        final String oAuth2Authentication = "Bearer " + this.accessToken;
+        headers.add("Authorization", oAuth2Authentication);
     }
 }
