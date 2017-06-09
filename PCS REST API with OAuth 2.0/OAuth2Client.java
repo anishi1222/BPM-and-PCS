@@ -39,9 +39,6 @@ public class OAuth2Client {
         }
     }
 
-    /**
-     * @return
-     */
     public static HashMap populateMap() {
         HashMap<String, String> map = new HashMap();
 
