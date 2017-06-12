@@ -150,8 +150,12 @@ public class OAuth2Client {
                          .invoke(Response.class);
 
         if (response != null && response.getStatus() != Response.Status.OK.getStatusCode()) {
-            throw new Exception(response.getStatusInfo().getReasonPhrase());
+            String exceptiionMessage = response.getStatusInfo().getReasonPhrase();
+            response.close();
+            throw new Exception(exceptiionMessage);
         }
-        return String.valueOf(response.getStatus());
+        String HTTPStatus = String.valueOf(response.getStatus());
+        response.close();
+        return HTTPStatus;
     }
 }
