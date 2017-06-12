@@ -32,8 +32,6 @@ public class OAuth2Client {
         try {
             String accessToken = oAuth2Client.getOAuthToken();
             FundsTransferRequest ftr = new FundsTransferRequest();
-            System.out.println("[HTTP Status]"+ oAuth2Client.invokeFundsTransferProcess(accessToken, ftr));
-            
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -58,11 +56,10 @@ public class OAuth2Client {
     }
 
     public String getOAuthToken() throws Exception {
-        String authString = entryMap.get("CLIENT_ID").toString() + ":" + entryMap.get("SECRET").toString();
-        return getAccessToken(authString, getClientAssertion(authString));
+        return getAccessToken(getClientAssertion());
     }
 
-    private Map<String, String> getClientAssertion(String authString) throws Exception {
+    private Map<String, String> getClientAssertion() throws Exception {
 
         MultivaluedHashMap<String, String> formData = new MultivaluedHashMap();
         formData.putSingle("grant_type", "client_credentials");
@@ -90,7 +87,7 @@ public class OAuth2Client {
         return assertionMap;
     }
 
-    private String getAccessToken(String authString, Map clientAssertionMap) throws Exception {
+    private String getAccessToken(Map clientAssertionMap) throws Exception {
 
         MultivaluedHashMap<String, String> formData = new MultivaluedHashMap();
         formData.putSingle("grant_type", "password");
