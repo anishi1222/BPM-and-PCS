@@ -6,3 +6,4 @@
   * How to get access token from OAuth 2.0 Server (Shared IDM)
   * How to invoke PCS REST API to create process instance with OAuth 2.0 authentication.
   
+These contents are originally composed with Jersey specified APIs but rewritten using JAX-RS 2.0 APIs.
